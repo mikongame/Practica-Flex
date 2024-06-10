@@ -279,7 +279,6 @@ footer > div > div > p {
   }
   footer > div > div {
     margin-bottom: 20px;
-    max-width: 120px;
     text-align: center;
   }
   footer > div > div > p {
@@ -287,24 +286,22 @@ footer > div > div > p {
     justify-content: center;
   }
   footer h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
   footer li {
-    font-size: 16px;
-  }
-  footer p {
     font-size: 18px;
   }
-  footer a {
-    font-size: 16px;
+  footer p {
+    font-size: 20px;
   }
-  .copy {
-    max-width: 768px;
+  footer a {
+    font-size: 18px;
   }
   .copy {
     text-align: center;
     padding: 10px 0;
     max-width: 768px;
+    font-size: 20px;
   }
   .container_nav p {
     font-size: 18px;
