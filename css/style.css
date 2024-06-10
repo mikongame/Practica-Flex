@@ -4,6 +4,7 @@
   font-family: Arial, sans-serif;
   font-size: 20px;
 }
+
 :root {
   --colorCorp1: #6a533f;
 }
@@ -55,13 +56,11 @@ nav p a:hover {
 }
 
 .container_nav {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 #menu {
-  height: 24;
-  width: 24;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,15 +112,6 @@ nav p a:hover {
   align-content: center;
 }
 
-@media (max-width: 600px) {
-  .container_nav {
-    width: 560px;
-  }
-  .flex {
-    flex-direction: column;
-  }
-}
-
 .card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -135,14 +125,14 @@ nav p a:hover {
 }
 
 .container_foot {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 footer {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: 22px 0;
 }
 
 footer > div {
@@ -153,7 +143,7 @@ footer > div {
 }
 
 footer h3 {
-  padding-bottom: 20px;
+  padding: 10px 0;
 }
 
 footer ul {
@@ -164,52 +154,137 @@ footer ul {
   text-decoration: none;
   color: inherit;
 }
+
 .logosrrss {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px;
-}
-
-.copy {
-  width: 1400px;
-  margin: 0 auto;
-  padding: 25px;
-  font-size: 24px;
 }
 
 .logosrrss a img {
   padding: 5px;
 }
 
-@media (max-width: 900px) {
+.copy {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 25px;
+  font-size: 24px;
+}
+
+.logosrrss a img {
+  padding: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    max-width: 375px;
+  }
+  footer {
+    max-width: 375px;
+  }
+  .container_nav {
+    max-width: 375px;
+  }
+
+div#menu {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
   .container_foot {
-    width: 900px;
+    max-width: 375px;
   }
   footer > div {
     flex-direction: column;
   }
   footer > div > div {
     margin-bottom: 20px;
-    max-width: 300px;
     text-align: center;
   }
-  .copy {
-    width: 900px;
+
+footer > div > div > p {
+    display: flex;
+    justify-content: center;
+}
+  footer h3 {
+    font-size: 18px;
+  }
+  footer li {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+
+.copy {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    max-width: 375px;
+}
+  footer a {
+    font-size: 16px;
+  }
+  .container_nav p {
+    font-size: 18px;
+  }
+  .container_nav img {
+    height: 24px;
+    width: 24px;
+  }
+  .search_bar {
+    width: 100%;
+  }
+  .search_bar input {
+    width: 90%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .logosrrss a img {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+  footer {
+    max-width: 768px;
+  }
+  .container_nav {
+    max-width: 768px;
+  }
   .container_foot {
-    width: 600px;
+    max-width: 768px;
+  }
+  div#menu {
+    max-width: 768px;
+    display: flex;
+    height: auto;
   }
   footer > div {
     flex-direction: column;
   }
   footer > div > div {
     margin-bottom: 20px;
-    max-width: 200px;
+    max-width: 120px;
     text-align: center;
+  }
+  footer > div > div > p {
+    display: flex;
+    justify-content: center;
   }
   footer h3 {
     font-size: 18px;
@@ -224,6 +299,39 @@ footer ul {
     font-size: 16px;
   }
   .copy {
-    width: 560px;
+    max-width: 768px;
+  }
+  .copy {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 768px;
+  }
+  .container_nav p {
+    font-size: 18px;
+  }
+  .container_nav img {
+    height: 24px;
+    width: 24px;
+  }
+  .search_bar {
+    width: 100%;
+  }
+  .search_bar input {
+    width: 90%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .logosrrss a img {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
   }
 }
